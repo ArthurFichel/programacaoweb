@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Atividade 04</title>
+</head>
+<body>
+	<h1>Cadastro</h1>
+<form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="post">
+	Login:<br>
+	<input type="text" name="login"><br/>
+
+	Senha:<br>
+	<input type="password" name="senha"><br/>
+
+	Confirme a Senha:<br>
+	<input type="password" name="confirmaSenha"><br/>
+	<br/>
+
+	Sexo:<br/>
+	<input type="radio" name="sexo">Masculino<br/>
+	<input type="radio" name="sexo">Feminino<br/>
+	<br/>
+
+	Email:<br>
+	<input type="email" name="email"><br/>
+	<br/>
+
+	Interesses:<br/>
+	<input type="checkbox" name="interesses">Futebol<br/>
+	<input type="checkbox" name="interesses">Política<br/>
+	<input type="checkbox" name="interesses">Carros<br/>
+	<input type="checkbox" name="interesses">Economia<br/>
+	<input type="checkbox" name="interesses">Celebridades<br/>
+	<br/>
+
+	<label for="states">Estado:</label>
+
+	<select name="states" id="states">
+  		<option value="pi">Piauí</option>
+  		<option value="ma">Maranhão</option>
+  		<option value="ce">Ceará</option>
+  		<option value="se">Sergipe</option>
+  		<option value="rn">Rio Grande do Norte</option>
+  		<option value="pe">Pernambuco</option>
+	</select><br/>
+
+	<br/>
+
+	<label for="w3review">Observações:</label><br/>
+
+	<textarea id="w3review" name="w3review" rows="4" cols="80">
+	
+	</textarea>
+
+	<input type="submit" value="enviar">
+	
+</form>
+
+</body>
+</html>
