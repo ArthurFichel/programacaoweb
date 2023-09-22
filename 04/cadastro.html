@@ -3,57 +3,52 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Atividade</title>
+	<title>Cadastro</title>
 </head>
 <body>
-	<h1>Cadastro</h1>
 <form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="post">
-	Login:<br>
-	<input type="text" name="login"><br/>
+	Login:<br/>
+	<input type="text" name="login"><br/><br/>
 
-	Senha:<br>
-	<input type="password" name="senha"><br/>
+	Senha:<br/>
+	<input type="password" name="senha"><br/><br/>
+	
+	Confirme a Senha:<br/>
+	<input type="password" name="confirme"><br/><br/>
 
-	Confirme a Senha:<br>
-	<input type="password" name="confirme a Senha"><br/>
-	<br/>
+	Nome:<br/>
+	<input type="text" name="nome"><br/><br/>
 
 	Sexo:<br/>
 	<input type="radio" value="Masculino" name="sexo">Masculino<br/>
-	<input type="radio" value="Feminino" name="sexo">Feminino<br/>
-	<br/>
+	<input type="radio" value="Feminino" name="sexo">feminino<br/><br/>
 
-	Email:<br>
-	<input type="email" name="email"><br/>
-	<br/>
+	Email:<br/>
+	<input type="email" name="Email"><br/><br/>
 
 	Interesses:<br/>
-	<input type="checkbox" value="Futebol" name="interesses">Futebol<br/>
-	<input type="checkbox" value="Política" name="interesses">Política<br/>
-	<input type="checkbox" value="Carros" name="interesses">Carros<br/>
-	<input type="checkbox" value="Economia" name="interesses">Economia<br/>
-	<input type="checkbox" value="Celebridades" name="interesses">Celebridades<br/>
+	<input type="checkbox"  name="interesses" value="Futebol"/>Futebol<br/>
+	<input type="checkbox" value="Politica" name="interesses">Política<br/>
+	<input type="checkbox" name="interesses" value="Economia">Economia<br/>
+	<input type="checkbox" name="interesses" value="Carros">Carros<br/>
+	<input type="checkbox" name="interesses"value="Celebridades">Celebridades<br/><br/>
+
+	<label for="Estado">Estado:</label><br/>
+  	<select name="estado" id="Estado">
+    	<option value="Piaui">Piaui</option>
+    	<option value="Maranhao">Maranhao</option>
+    	<option value="Ceara">Ceara</option>
+    	<option value="Sergipe">Sergipe</option>
+  	</select>
+  	<br><br>
+
+  	<label for="observacoes">Observações:</label><br/>
+  	<textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+  <br>
+
 	<br/>
 
-	<label for="states">Estado:</label>
-
-	<select name="states" id="states">
-  		<option value="Piauí">Piauí</option>
-  		<option value="Maranhão">Maranhão</option>
-  		<option value="Ceará">Ceará</option>
-  		<option value="Sergipe">Sergipe</option>
-  		<option value="Rio Grande do Norte">Rio Grande do Norte</option>
-  		<option value="Pernambuco">Pernambuco</option>
-	</select><br/>
-
-	<br/>
-
-	<label for="w3review">Observações:</label><br/>
-	<textarea id="w3review" name="w3review" rows="4" cols="80">
-	
-	</textarea>
-
-	<input type="submit" value="enviar">
+	<input type="submit" value="Enviar">
 	
 </form>
 
