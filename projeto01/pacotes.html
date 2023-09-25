@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JM Viagens</title>
+</head>
+<body>
+<table border="0" width="900" align="center">
+	<tr>
+		<td> <img src="imagens/logo.png" /> </td>
+		<td align="right">
+			<a href="index.html">Home</a> |
+			<a href="destinos.html">Destinos</a> |
+			<a href="quem-somos.html">Quem Somos</a> |
+			<a href="contato.html">Contatos</a> 
+		</td>
+		
+	</tr>
+	<tr>
+		<td colspan="2"><img src="imagens/principal.png" /> </td>
+	</tr>
+	<tr>
+		<td colspan="2"> 
+			<h3> Monte seu pacote </h3><br/>
+			<form action="sucesso.html" method="post">
+			<label for="data">Data de ida:</label>
+  			<input type="date" id="data" name="data"> /
+
+  			<label for="data">Data de volta:</label>
+  			<input type="date" id="data" name="data"><br/><br/>
+
+  			<label for="cidade">Origem:</label>
+			<select id="cidade" name="cidade">
+  				<option value="teresina-pi">TERESINA-PI</option>
+  				<option value="fortaleza-ce">FORTALEZA-CE</option>
+  				<option value="sao_paulo-sp">SÃO PAULO-SP</option>
+  				<option value="salvador-ba">SALVADOR-BA</option>
+  				<option value="sao_luiz-ma">SÃO LUIZ-MA</option> 
+			</select> /
+
+			<label for="pais">Destino:</label>
+			<select id="pais" name="pais">
+  				<option value="tokyo-jpn">TOKYO-JPN</option>
+  				<option value="veneza-ita">VENEZA-ITA</option>
+  				<option value="roma-ita">ROMA-ITA</option>
+  				<option value="sidney-aus">SIDNEY-AUS</option>
+  				<option value="lisboa-por">LISBOA-POR</option>
+  				<option value="paris-fra">PARIS-FRA</option>
+  				<option value="berlin-ale">BERLIN-ALE</option>
+			</select><br/><br/>
+
+  			<label for="numeros">Quantidade de adultos(máx. 5):</label>
+			<select id="numeros" name="numero">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select> /
+
+			<label for="numeros">Quantidade de crianças(máx. 5):</label>
+			<select id="numeros" name="numero">
+				<option value="0">0</option>
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+			</select><br/><br/>
+
+			Café da manhã:<br/>
+			<input type="radio" value="sim">Sim<br/>
+			<input type="radio" value="nao">Não<br/><br/>
+
+			<label for="observacoes">Informações adicionais:</label><br/>
+  			<textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+  			<br>
+
+			<input type="submit" value="Enviar">
+
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><h4 align="center">Todos os direitos reservados</h4> </td>
+	</tr>
+</table>
+</body>
+</html>
