@@ -6,79 +6,66 @@
 	<title>Posicionamentos</title>
 	<style>
 		body {
-			width: 1000px;
-			float: left;
+			width: 800px;
 			border: 1px solid black;
-
-		}
-
-		#Header {
-			position: relative;
-			background: #4169E1;
-			width: 100%;
-			height: 150px;
-		}
-
-		#Menu {
-			position: relative;
-			background: #EEA9B8;
-			width: 100%;
-			height: 50px;
-		}
-
-		#Esquerdo {
-			position: relative;
-			float: left;
-			background: #EEC900;
-			width: 25%;
-			height: 500px;
-		}
-
-		#Centro {
-			position: relative;
-			background: #90EE90;
-			width: 50%;
-			height: 500px;
 			float: left;
 		}
 
-		#Direito {
-			position: relative;
-			float: right;
-			background: #FFB90F;
-			width: 25%;
-			height: 500px;
-			position: relative;
-		} 
-
-		#Footer { 
-			position: relative;
-			background-color: plum;
-			width: 100%;
-			bottom: 100%;
-			height: 50px;
-			float: left;
-			
-		}
-
-		.h3 {
-		 	color: black;
+		 .h3 {
+		 	color: white;
 		 	text-align: center;
 		 	align-items: center;
 		 	display: flex;
 		 	justify-content: center;
-		 	font-size: 2em;
 		 }
+
+		 #MainMenu {
+			background: tomato;
+			height: 40px;
+		}
+
+		#Header {
+			background: #836FFF;
+			height: 120px;
+		}
+
+		#Content {
+			background: #32CD32;
+			width: 500px;
+			height: 500px;
+			float: left;
+		}
+
+		#SiteBar {
+			background: #6B8E23;
+			width: 300px;
+			height: 500px;
+			float: right;
+		}
+
+		#Footer {
+
+			background: #DAA520;
+			width: 800px;
+			height: 40px;
+			bottom: -500px;
+			color: white;
+			float: left;
+		}
 	</style>
+
 </head>
 <body>
 
-	<div id="Header" class="h3">Header</div>
-	<div id="Menu" class="h3">Menu</div>
-	<div id="Esquerdo" class="h3">Esquerdo</div>
-	<div id="Centro" class="h3">Centro</div>
-	<div id="Direito" class="h3">Direito</div>
-	<div id="Footer" class="h3">Footer</div>
+	<div id="MainMenu" class="h3"> MAIN MENU   </div>
+
+	<div id="Header" class="h3">  HEADER  </div>
+
+	<div id="Content" class="h3"> CONTENT </div>
+
+	<div id="SiteBar" class="h3"> SITE BAR </div>
+
+	<div id="Footer" class="h3"> FOOTER </div>
 
 </body>
-</html>
+</html> 
