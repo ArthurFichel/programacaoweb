@@ -1,0 +1,76 @@
+<html>
+    <head>
+    <title>Atividade 23</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Adicionando JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <!-- Adicionando Javascript -->
+    <script type="text/javascript" >
+        $(document).ready(function() {
+            //Quando o botão é clicado.
+            $("#mybtn").click(function() {
+                //Nova variável "cep".
+                var cep = $("#cep").val();
+                        //Preenche os campos com "..." enquanto consulta webservice.
+                 $("#rua").val("...");
+                 $("#bairro").val("...");
+                 $("#cidade").val("...");
+                 $("#uf").val("...");
+                 $("#ibge").val("...");
+                 //Consulta o webservice viacep.com.br/
+                 var url = "https://viacep.com.br/ws/"+ cep +"/json/?callback=?";
+                 $.getJSON(url, function(retorno) {
+                            if (!("erro" in retorno)) {
+                                //Atualiza os campos com os valores da consulta.
+                                $("#rua").val(retorno.logradouro);
+                                $("#bairro").val(retorno.bairro);
+                                $("#cidade").val(retorno.localidade);
+                                $("#uf").val(retorno.uf);
+                                $("#ibge").val(retorno.ibge);
+                            } //end if.
+                            else {
+                                //CEP pesquisado não foi encontrado.
+                                alert("CEP não encontrado.");
+                            }
+                        });
+            });/* FIM DA FUNÇÃO viacep*/
+
+
+        }); /* FIM DA FUNÇÃO ready*/
+
+    </script>
+    </head>
+
+    <body>
+
+    <!-- Inicio do formulario -->
+    <div>  
+         <h1>FORMULÁRIO - VIA CEP</h1>
+        <label>Cep:
+        <input name="cep" type="text" id="cep" value="" placeholder="Somente números" size="10" maxlength="9" /></label>
+        <button id="mybtn">Clique</button>
+        <br/>
+        <hr>
+
+        <label>Rua:<br />
+        <input name="rua" type="text" id="rua" size="60" /></label><br />
+        <label>Bairro:<br />
+        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+        <label>Cidade:<br />
+        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+        <label>Estado:<br />
+        <input name="uf" type="text" id="uf" size="2" /></label><br />
+        <label>IBGE:<br />
+        <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+        <hr>
+
+    </div>
+
+<br><br>
+    </body>
+
+    </html>
